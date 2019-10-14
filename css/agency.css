@@ -243,6 +243,12 @@ header.masthead .intro-text .intro-heading {
   width: 100%;
 }
 
+.top-img {
+  position: relative;
+  bottom: 40px;
+  width: 100%;
+}
+
 .img-up {
   position: relative;
   bottom: 18px;
