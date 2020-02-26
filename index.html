@@ -32,6 +32,22 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
 
+  <style>
+    .parallax {
+      /* The image used */
+      background-image: url("./img/bkgrd/titanicFull.jpg");
+
+      /* Set a specific height */
+      height: 100%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+
 </head>
 
 <body id="page-top">
@@ -55,9 +71,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
           </li>
-          <!--          <li class="nav-item">-->
-          <!--            <a class="nav-link js-scroll-trigger" href="#about">About</a>-->
-          <!--          </li>-->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#facts">Facts</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
           </li>
@@ -186,85 +202,141 @@
   </section>
 
   <!-- About -->
-<!--  <section class="page-section" id="about">-->
-<!--    <div class="container">-->
-<!--      <div class="row">-->
-<!--        <div class="col-lg-12 text-center">-->
-<!--          <h2 class="section-heading text-uppercase">About</h2>-->
-<!--          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="row">-->
-<!--        <div class="col-lg-12">-->
-<!--          <ul class="timeline">-->
-<!--            <li>-->
-<!--              <div class="timeline-image">-->
-<!--                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">-->
-<!--              </div>-->
-<!--              <div class="timeline-panel">-->
-<!--                <div class="timeline-heading">-->
-<!--                  <h4>2009-2011</h4>-->
-<!--                  <h4 class="subheading">Our Humble Beginnings</h4>-->
-<!--                </div>-->
-<!--                <div class="timeline-body">-->
-<!--                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </li>-->
-<!--            <li class="timeline-inverted">-->
-<!--              <div class="timeline-image">-->
-<!--                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">-->
-<!--              </div>-->
-<!--              <div class="timeline-panel">-->
-<!--                <div class="timeline-heading">-->
-<!--                  <h4>March 2011</h4>-->
-<!--                  <h4 class="subheading">An Agency is Born</h4>-->
-<!--                </div>-->
-<!--                <div class="timeline-body">-->
-<!--                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--              <div class="timeline-image">-->
-<!--                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">-->
-<!--              </div>-->
-<!--              <div class="timeline-panel">-->
-<!--                <div class="timeline-heading">-->
-<!--                  <h4>December 2012</h4>-->
-<!--                  <h4 class="subheading">Transition to Full Service</h4>-->
-<!--                </div>-->
-<!--                <div class="timeline-body">-->
-<!--                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </li>-->
-<!--            <li class="timeline-inverted">-->
-<!--              <div class="timeline-image">-->
-<!--                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">-->
-<!--              </div>-->
-<!--              <div class="timeline-panel">-->
-<!--                <div class="timeline-heading">-->
-<!--                  <h4>July 2014</h4>-->
-<!--                  <h4 class="subheading">Phase Two Expansion</h4>-->
-<!--                </div>-->
-<!--                <div class="timeline-body">-->
-<!--                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </li>-->
-<!--            <li class="timeline-inverted">-->
-<!--              <div class="timeline-image">-->
-<!--                <h4>Be Part-->
-<!--                  <br>Of Our-->
-<!--                  <br>Story!</h4>-->
-<!--              </div>-->
-<!--            </li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
+  <section style="padding-top: 0;" class="page-section" id="facts">
+
+    <!-- Container element -->
+    <div class="parallax">
+      <div class="container">
+        <div class="row" style="padding-top: 5em;">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase text-white"><span class="yellow">Facts</span> About Titanic</h2>
+            <h3 class="section-subheading text-white">Want to know more about the famous R.M.S. Titanic? <br>Click the button below to find out more!</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mb-4" style="margin: auto;" onclick="viewImages()">Tell Me More</button>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 text-center">
+            <h1 class="text-uppercase" style="font-size: 20em;color: #ffca0078;">5</h1>
+          </div>
+          <div class="col-lg-7 text-center" style="padding-top: 3.5em;">
+            <h1 class="text-uppercase" style="font-size: 7.5em;color: #ffca0078;">Days<br>at sea</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 text-center" style="padding-top: 5em;">
+            <h1 class="text-uppercase" style="font-size: 2em;color: #00daff78;">Designed to withstand</h1>
+          </div>
+          <div class="col-lg-2 text-center">
+            <h1 class="text-uppercase" style="font-size: 20em;color: #00daff78;">4</h1>
+          </div>
+          <div class="col-lg-6 text-center" style="padding-top: 5em;">
+            <h1 class="text-uppercase" style="font-size: 2em;color: #00daff78;">Flooded compartments</h1>
+            <h1 class="text-uppercase" style="font-size: 2em;color: #ababab78; margin-top: 2em;">6 were filled</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 text-center">
+            <h1 class="text-uppercase" style="font-size: 20em;color: #ff000078;">3</h1>
+          </div>
+          <div class="col-lg-7 text-center" style="padding-top: 3.5em;">
+            <h1 class="text-uppercase" style="font-size: 10vw;color: #ff000078;">Sister<br>ships</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 text-center" style="padding-top: 5em;">
+            <h1 class="text-uppercase" style="font-size: 3em;color: #00ff5078;">It took</h1>
+          </div>
+          <div class="col-lg-2 text-center">
+            <h1 class="text-uppercase" style="font-size: 20em;color: #00ff5078;">2</h1>
+          </div>
+          <div class="col-lg-6 text-center" style="padding-top: 5em;">
+            <h1 class="text-uppercase" style="font-size: 4em;color: #00ff5078;">Months<br>2 years<br>to build</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <h1 class="text-uppercase" style="font-size: 20em;color: #ffca0078;">1</h1>
+          </div>
+          <div class="col-lg-9 text-center" style="padding-top: 6%;">
+            <h1 class="text-uppercase" style="font-size: 9vw;color: #ffca0078;">Legendary<br>Production</h1>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2009-2011</h4>
+                    <h4 class="subheading">Our Humble Beginnings</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>March 2011</h4>
+                    <h4 class="subheading">An Agency is Born</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>December 2012</h4>
+                    <h4 class="subheading">Transition to Full Service</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>July 2014</h4>
+                    <h4 class="subheading">Phase Two Expansion</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Be Part
+                    <br>Of Our
+                    <br>Story!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <!-- Team -->
   <section class="bg-white page-section" id="team">
@@ -478,6 +550,11 @@
   <script src="js/agency.min.js"></script>
 
   <script type="text/javascript">
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems, options);
+    });
 
     let imgs = [
       "img/portfolioSM/DSC_7330a.jpg",
